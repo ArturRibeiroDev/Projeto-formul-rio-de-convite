@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+  
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+
+  --font-family-lecker: "Leckerli One", cursive;
+  --font-family-baloo: "Baloo 2", sans-serif;
+  --font-family-open: "Open Sans", sans-serif;
+
+  --logo: 40px var(--font-family-lecker);
+  --heading-md: bold 28px var(--font-family-baloo);
+  --heading-sm: bold 18px var(--font-family-baloo);
+  --body-md: 16px var(--font-family-open);
+  --body-sm: 14px var(--font-family-open);
+  --body-xs: 12px var(--font-family-open);
+}
+
+h1 {
+  font: var(--logo);
+}

@@ -1,0 +1,58 @@
+#app {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  background-image: url(../assets/Background.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 1.25rem 0;
+  padding: 2rem;
+
+  img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font: var(--logo);
+    color: #FF598B;
+    margin-bottom: .25rem;
+  }
+
+  p {
+    font: var(--body-md);
+    color: var(--text-heading);
+  }
+}
+
+.aside-container {
+    max-width: 21rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+body {
+  background-color: #121111;
+}
+
+main {
+  background-color: var(--shape-body);
+  border-radius: .75rem;
+  padding: 5rem 8rem;
+  margin: 1.25rem 0;
+
+  overflow: auto;
+
+  & .main-container {
+    max-width: 35rem;
+    margin: auto;
+  }
+}
