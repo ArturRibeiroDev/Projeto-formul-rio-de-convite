@@ -1,0 +1,12 @@
+fieldset {
+  border: none;
+
+  display: grid;
+}
+
+legend {
+  color: var(--text-heading);
+  display: inline-block;
+  padding-top: 40px;
+  font: 600 1.25rem/0 var(--font-family-open);
+}

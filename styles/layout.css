@@ -55,4 +55,8 @@ main {
     max-width: 35rem;
     margin: auto;
   }
+
+  h1 {
+    font: var(--heading-md);
+  }
 }

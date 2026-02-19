@@ -29,6 +29,19 @@
   --body-xs: 12px var(--font-family-open);
 }
 
-h1 {
-  font: var(--logo);
+h1, h2 {
+  color: var(--text-heading);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-2 {
+  flex:2;
 }
