@@ -31,10 +31,52 @@
     <div class="main-container">
       <h1>Crie seu convite</h1>
 
-      <fieldset>
+      <fieldset class="about">
         <legend><span id="calendar"></span>Sobre o evento</legend>
 
-        <h1>Teste 2 só pra ver se foi mesmo</h1>
+        <div class="input-wrapper">
+          <label for="tittle">Título</label>
+          <input type="text" name="tittle" id="tittle" placeholder="Nome do evento">
+        </div>
+
+        <div class="flex">
+          <div class="input-wrapper flex-1">
+          <label for="data-inicio">Início</label>
+          <input type="date" name="data-inicio" id="data-inicio">
+        </div>
+
+        <div class="input-wrapper flex-1">
+          <label for="data-fim">Fim</label>
+          <input type="date" name="data-fim" id="data-fim">
+        </div>
+        </div>
+
+        <div class="tipo-local-wrapper">
+  <div class="tipo-local-col">
+    <label>Tipo</label>
+    <div class="radio-wrapper">
+      <div class="radio-inner">
+        <input type="radio" id="presencial" name="tipo-evento" value="presencial" checked>
+        <label for="presencial" class="botao-tipo">Presencial</label>
+      </div>
+      <div class="radio-inner">
+        <input type="radio" id="online" name="tipo-evento" value="online">
+        <label for="online" class="botao-tipo">Online</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="tipo-local-col">
+    <label for="link">Local</label>
+    <input type="text" id="link" name="link" placeholder="Link ou endereço">
+  </div>
+</div>
+
+        <div class="textarea-wrapper">
+          <label for="description">Descrição</label>
+          <textarea name="description" id="description"
+          placeholder="Escreva sobre os detalhes do evento"></textarea>
+        </div>
       </fieldset>
     </div>
   </main>

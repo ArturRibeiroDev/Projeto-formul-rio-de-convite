@@ -1,0 +1,39 @@
+.tipo-local-wrapper {
+    display: flex;              /* 2 colunas lado a lado */
+    gap: 1rem;                  /* espaçamento entre colunas */
+    align-items: flex-start;    /* alinha pelo topo */
+    margin: 1rem 0;
+}
+
+.tipo-local-col {
+    display: flex;
+    flex-direction: column;     /* label em cima do input/bloco */
+    flex: 1;                    /* colunas iguais */
+}
+
+.radio-wrapper {
+    display: flex;              /* botões lado a lado */
+}
+
+.radio-inner input[type="radio"] {
+    display: none;              /* esconde input real */
+}
+
+.botao-tipo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    min-width: 100px;
+}
+
+.radio-inner input[type="radio"]:checked + .botao-tipo {
+    background-color: #4f46e5;
+    color: white;
+    border-color: #4f46e5;
+}
+
