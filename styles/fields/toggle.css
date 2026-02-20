@@ -1,8 +1,8 @@
 .input-wrapper-toggle {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     gap: .75rem;
+    min-width: 200px;          
 }
 
 #switch {
@@ -39,7 +39,7 @@
 
 #switch span {
   display: block;
-  width: 64px;
+  width: 56px;
   height: 32px;
   background-color: var(--input-base);
   border: 1px solid var(--input-stroke);
