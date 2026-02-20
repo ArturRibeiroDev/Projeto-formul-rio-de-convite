@@ -92,6 +92,10 @@
         color: #FFFFFF;
         font: var(--body-sm);
     }
+    label {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .flex-collors {
@@ -118,6 +122,10 @@
 
   &:has(:checked) {
     outline: 2px solid #59B2FF;
+  }
+
+  &:hover {
+    border: 6px solid var(--shape-hover);
   }
 }
 
@@ -166,7 +174,48 @@
 }
 
 
+.radio-wrapper-event {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
+    gap: .5rem;
+}
+
+
+
+.radio-card-tema {
+    background-color: var(--shape-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .5rem;
+
+    padding: .25rem;
+
+    position: relative;
+     & input,
+    & input:focus,
+    & input:hover {
+    all: unset;
+    inset: 0;
+    position: absolute;
+  }
+
+  h2 {
+    font: 14px var(--font-family-open);
+    color: var(--text-heading);
+    margin-block: .5rem;
+  }
+
+  &:hover {
+    background-color: var(--input-stroke);
+  }
+
+  &:has(:checked) {
+    outline: 2px solid #59B2FF;
+  }
+}
 
 
 
