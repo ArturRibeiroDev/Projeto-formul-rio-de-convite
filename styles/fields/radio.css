@@ -83,7 +83,87 @@
     background-image: url(../../assets/icons/video.png);
 }
 
+.painter {
+    background-image: url(../../assets/icons/paintbrush-vertical.png);
+}
 
+.personalize {
+    h2 {
+        color: #FFFFFF;
+        font: var(--body-sm);
+    }
+}
+
+.flex-collors {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 12px;
+
+}
+
+.radio-card-collor {
+    border: 6px solid var(--shape-button);
+    border-radius: 50%;
+
+    padding: 14px;
+
+    position: relative;
+     & input,
+    & input:focus,
+    & input:hover {
+    all: unset;
+    inset: 0;
+    position: absolute;
+  }
+
+  &:has(:checked) {
+    outline: 2px solid #59B2FF;
+  }
+}
+
+.blue {
+    background-color: #59B2FF;
+}
+
+.purple {
+    background-color: #6A59FF;
+}
+
+.rosa-shock {
+    background-color: #B259FF;
+}
+
+.rosa {
+    background-color: #FF59F9;
+}
+
+.rosa-vermelho {
+    background-color: #FF598B;
+}
+
+.laranja {
+    background-color: #FF5959;
+}
+
+.laranja-claro {
+    background-color: #FF8B59;
+}
+
+.amarelo {
+    background-color: #FFCD59;
+}
+
+.amarelo-verde {
+    background-color: #E1FF59;
+}
+
+.verde {
+    background-color: #59FF91;
+}
+
+.ciano {
+    background-color: #59FFF9;
+}
 
 
 

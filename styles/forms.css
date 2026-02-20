@@ -12,3 +12,32 @@ legend {
   font: 600 1rem/0 var(--font-family-open);
 }
 
+input[type="date"] {
+  color: #869198;
+  &::-webkit-calendar-picker-indicator {
+  display: none;  
+  -webkit-appearance: none; 
+}
+}
+
+.calendar {
+  background-image: url(../assets/icons/calendar.png);
+}
+
+legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem;
+
+
+  span {
+  width: 24px;
+  height: 24px;
+
+    display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+}

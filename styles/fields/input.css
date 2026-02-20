@@ -2,7 +2,8 @@ input, textarea, select {
     appearance: none;
     width: 100%;
     border-radius: .5rem;
-    padding: 1rem;
+    padding: 13px 1rem;
+    
 
     border: 1px solid var(--input-stroke);
     background-color: var(--input-base);
@@ -14,5 +15,9 @@ input, textarea, select {
 }
 
 .input-wrapper {
-    margin: 1rem 1rem 0 0;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: none;
 }
