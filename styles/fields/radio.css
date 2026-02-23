@@ -1,21 +1,21 @@
 .tipo-local-wrapper {
-    display: flex;              /* 2 colunas lado a lado */
-    gap: 1rem;                  /* espaçamento entre colunas */
-    align-items: flex-start;    /* alinha pelo topo */
+    display: flex;              
+    gap: 1rem;                  
+    align-items: flex-start;    
     margin: 1rem 0;
 }
 
 .tipo-local-col {
     display: flex;
-    flex-direction: column;     /* label em cima do input/bloco */
-    flex: 1;                    /* colunas iguais */
+    flex-direction: column;     
+    flex: 1;                   
 }
 
 .radio-wrapper {
     display: flex; 
     gap: 0;  
     width: 100%;
-    height: 48px;         /* botões lado a lado */
+    height: 48px;         
 }
 
 .radio-inner {
@@ -60,8 +60,8 @@
     border-top-left-radius: .5rem;   
     border-bottom-left-radius: .5rem; 
     box-shadow:
-        inset 4px 0 0 var(--input-base),  /* esquerda */
-        inset 0 -4px 0 var(--input-base),   /* baixo */
+        inset 4px 0 0 var(--input-base),  
+        inset 0 -4px 0 var(--input-base),   
         inset 0 4px 0 var(--input-base);
 }
 
@@ -70,8 +70,8 @@
     border-top-right-radius: .5rem;   
     border-bottom-right-radius: .5rem; 
     box-shadow:
-        inset -4px 0 0 var(--input-base),   /* direita */
-        inset 0 -4px 0 var(--input-base),   /* baixo */
+        inset -4px 0 0 var(--input-base),   
+        inset 0 -4px 0 var(--input-base),   
         inset 0 4px 0 var(--input-base);
 }
 
@@ -126,7 +126,7 @@
   cursor: pointer;
 
   &:has(:checked) {
-    outline: 2px solid #59B2FF;
+    outline: 2px solid var(--brand-light);
   }
 
   &:hover {
@@ -135,7 +135,7 @@
 }
 
 .blue {
-    background-color: #59B2FF;
+    background-color: var(--brand-light);
 }
 
 .purple {
@@ -218,7 +218,7 @@
   }
 
   &:has(:checked) {
-    outline: 2px solid #59B2FF;
+    outline: 2px solid var(--brand-light);
   }
 }
 

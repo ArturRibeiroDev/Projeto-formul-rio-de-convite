@@ -37,7 +37,7 @@
 }
 
 .light #switch span {
-     background-color: #59B2FF;
+     background-color: var(--brand-light);
 }
 
 

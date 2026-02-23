@@ -31,23 +31,37 @@
     <div class="main-container">
       <h1>Crie seu convite</h1>
 
+      <form method="post" enctype="multipart/form-data" novalidate>
+
       <fieldset class="about">
         <legend><span class="calendar"></span>Sobre o evento</legend>
 
         <div class="input-wrapper">
           <label for="tittle">Título</label>
-          <input type="text" name="tittle" id="tittle" placeholder="Nome do evento">
+          <input type="text" name="tittle" id="tittle" placeholder="Nome do evento" required>
+          <div class="error">
+                    <span class="img-error"></span>
+                    <p>Campo Obrigatório</p>
+                  </div>
         </div>
 
         <div class="flex">
           <div class="input-wrapper flex-1">
           <label for="data-inicio">Início</label>
-          <input type="date" name="data-inicio" id="data-inicio" placeholder="DD/MM/AAAA, --:--">
+          <input type="date" name="data-inicio" id="data-inicio" placeholder="DD/MM/AAAA, --:--" required>
+          <div class="error">
+                    <span class="img-error"></span>
+                    <p>Campo Obrigatório</p>
+                  </div>
         </div>
 
         <div class="input-wrapper flex-1">
           <label for="data-fim">Fim</label>
-          <input type="date" name="data-fim" id="data-fim">
+          <input type="date" name="data-fim" id="data-fim" required>
+          <div class="error">
+                    <span class="img-error"></span>
+                    <p>Campo Obrigatório</p>
+                  </div>
         </div>
         </div>
 
@@ -70,14 +84,24 @@
 
   <div class="tipo-local-col">
     <label for="link">Local</label>
-    <input type="text" id="link" name="link" placeholder="Link ou endereço">
+    <input type="text" id="link" name="link" placeholder="Link ou endereço" required>
+    <div class="error">
+                    <span class="img-error"></span>
+                    <p>Campo Obrigatório</p>
+                  </div>
   </div>
 </div>
 
         <div class="textarea-wrapper">
           <label for="description">Descrição</label>
           <textarea name="description" id="description"
-          placeholder="Escreva sobre os detalhes do evento" cols="30" rows="5"></textarea>
+          placeholder="Escreva sobre os detalhes do evento" cols="30" rows="5" required>
+        
+                  </textarea>
+                  <div class="error">
+                    <span class="img-error"></span>
+                    <p>Campo Obrigatório</p>
+                  </div>
         </div>
       </fieldset>
 
@@ -197,7 +221,7 @@
           <div class="input-wrapper-toggle">
 
           <div id="switch" onclick="toggleMode()">
-        <button></button>
+        <button type="button"></button>
         <span></span>
           </div>
           <span class="switch-label">Escuro</span>
@@ -225,25 +249,59 @@
 
         <div class="input-wrapper">
           <label for="name">Nome</label>
-          <input type="text" name="name" id="name" placeholder="Nome completo">
+          <input type="text" name="name" id="name" placeholder="Nome completo" required>
+          <div class="error">
+                    <span class="img-error"></span>
+                    <p>Campo Obrigatório</p>
+                  </div>
         </div>
 
         <div class="email-tel flex">
           <div class="input-wrapper flex-1">
             <label for="e-mail">E-mail</label>
-            <input type="email" name="e-mail" id="e-mail" placeholder="exemplo@email.com">
+            <input type="email" name="e-mail" id="e-mail" placeholder="exemplo@email.com" required>
+            <div class="error">
+                    <span class="img-error"></span>
+                    <p>Campo Obrigatório</p>
+                  </div>
           </div>
           <div class="input-wrapper flex-1">
             <label for="tel">Telefone</label>
-            <input type="tel" name="tel" id="tel" placeholder="(99) 999999-9999">
+            <input type="tel" name="tel" id="tel" placeholder="(99) 999999-9999" required>
+            <div class="error">
+                    <span class="img-error"></span>
+                    <p>Campo Obrigatório</p>
+                  </div>
           </div>
         </div>
 
         <div class="divider"></div>
 
+        <div class="terms-wrapper input-wrapper checkbox-wrapper checkbox-first">
+          <span  class="checkbox-image-terms"></span>
+          <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+          <input type="checkbox" name="terms" id="terms-1">
+        </div>
+
+        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+          <span  class="checkbox-image-terms"></span>
+          <label for="terms">Aceito receber atualizações e promoções por e-mail</label>
+          <input type="checkbox" name="terms" id="terms-2">
+        </div>
         
+        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+          <span  class="checkbox-image-terms"></span>
+          <label for="terms">Aceito receber atualizações e promoções por SMS</label>
+          <input type="checkbox" name="terms" id="terms-3">
+        </div>
+
+        <div class="action-wrapper">
+          <button type="submit"><span class="button-img"></span>Gerar convite</button>
+        </div>
   
       </fieldset>
+
+      </form>
     </div>
   </main>
   </div>

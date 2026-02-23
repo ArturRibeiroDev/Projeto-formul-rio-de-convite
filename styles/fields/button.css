@@ -1,0 +1,39 @@
+.action-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .75rem;
+
+    button {
+        all: unset;
+        background-color: var(--brand-dark);
+        padding: 14px 1.25rem;
+        border: none;
+        border-radius: .5rem;
+        display: flex;
+        gap: .75rem;
+        color: var(--text-heading);
+        font-weight: 500;
+
+        cursor: pointer;
+
+        margin-top: 3rem;
+
+        &:hover {
+            background-color: var(--brand-mid);
+        }
+    }
+}
+
+.button-img {
+    background-image: url(../../assets/icons/ticket.svg);
+
+    width: 20px;
+    height: 20px;
+
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
