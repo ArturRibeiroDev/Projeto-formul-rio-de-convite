@@ -3,6 +3,8 @@
     align-items: center;
     gap: .75rem;
     min-width: 200px;          
+
+    cursor: pointer;
 }
 
 #switch {
@@ -22,6 +24,8 @@
   left: 4px;
   z-index: 1;
   transform: translateY(-50%);
+
+  cursor: pointer;
 
   animation: slide-back 0.2s;
 }

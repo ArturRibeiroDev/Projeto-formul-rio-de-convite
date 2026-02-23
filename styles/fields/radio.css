@@ -123,6 +123,8 @@
     position: absolute;
   }
 
+  cursor: pointer;
+
   &:has(:checked) {
     outline: 2px solid #59B2FF;
   }

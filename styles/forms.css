@@ -41,3 +41,7 @@ legend {
   background-position: center;
 }
 }
+
+.contats-pic {
+    background-image: url(../../assets/icons/contact.png);
+}

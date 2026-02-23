@@ -28,3 +28,9 @@ textarea {
     textarea:focus{
         outline: 1px solid #59B2FF;
     }
+
+.divider {
+    border: 1px solid var(--input-stroke);
+    margin-block: 1.5rem;
+}
+

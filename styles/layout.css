@@ -13,7 +13,7 @@ aside {
   position: fixed; 
   top: 0;
   left: 0;
-  width: 25%;            /* mesma largura do grid que você tinha */
+  width: 25%;            
   height: 100vh;
   margin: 1.25rem 0 1.25rem 1.25rem;
   padding: 2rem;
